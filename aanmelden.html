@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+</head>
+
+<body>
+    <h1>Aanmeldformulier</h1>
+
+    <form>
+        <fieldset>
+           <legend>Persoonlijke gegevens</legend>
+            Voornaam*:
+            <input name="Voornaam" type="text" required autofocus>
+            Tussenvoegsel:
+            <input name="Tussenvoegsel" type="text">
+            Achternaam*:
+            <input name="Achternaam" type="text" required>
+            Adres*:
+            <input name="postcode" type="text" placeholder="1400cr" maxlength="6" size="6" required>
+            <input name="straatnaam" type="text" placeholder="straatnaam" required>
+            <input name="huisnummer" type="text" placeholder="huisnr" size="4" required>
+            Telefoonnummer:
+            <input name="landnummer" type="tel" maxlength="4" size="4">
+            <input name="Telefoonnummer" type="tel" maxlength="8" size="8">
+        </fieldset>
+
+        <fieldset>
+           <legend>Inloggegevens</legend>
+            E-mailadres*:
+            <input name="E-mailadres" type="email" placeholder="voorbeeld@voorbeeld.nl" required>
+            Wachtwoord*:
+            <input name="Wachtwoord" type="password" required>
+        </fieldset>
+
+        <input type="submit" value="Aanmelden">
+    </form>
+
+<span>* Verplichte velden</span>
+
+</body>
+
+</html>
