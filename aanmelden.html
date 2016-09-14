@@ -12,27 +12,27 @@
     <form>
         <fieldset>
            <legend>Persoonlijke gegevens</legend>
-            Voornaam*:
+            <label for="voornaam">Voornaam*:</label>
             <input name="Voornaam" type="text" required autofocus>
-            Tussenvoegsel:
-            <input name="Tussenvoegsel" type="text">
-            Achternaam*:
-            <input name="Achternaam" type="text" required>
-            Adres*:
+            <label for="tussenvoegsel">Tussenvoegel:</label>
+            <input name="tussenvoegsel" type="text">
+            <label for="achternaam">Achternaamm*:</label>
+            <input name="achternaam" type="text" required>
+            <label for="postcode">Adres*:</label>
             <input name="postcode" type="text" placeholder="1400cr" maxlength="6" size="6" required>
             <input name="straatnaam" type="text" placeholder="straatnaam" required>
             <input name="huisnummer" type="text" placeholder="huisnr" size="4" required>
-            Telefoonnummer:
+            <label for="telefoonnummer">Telefoonnummer:</label>
             <input name="landnummer" type="tel" maxlength="4" size="4">
-            <input name="Telefoonnummer" type="tel" maxlength="8" size="8">
+            <input name="telefoonnummer" type="tel" maxlength="8" size="8">
         </fieldset>
 
         <fieldset>
            <legend>Inloggegevens</legend>
-            E-mailadres*:
-            <input name="E-mailadres" type="email" placeholder="voorbeeld@voorbeeld.nl" required>
-            Wachtwoord*:
-            <input name="Wachtwoord" type="password" required>
+            <label for="e-mailadres">E-mailadres*:</label>
+            <input name="e-mailadres" type="email" placeholder="voorbeeld@voorbeeld.nl" required>
+            <label for="wachtwoord">Wachtwoord*:</label>
+            <input name="wachtwoord" type="password" required>
         </fieldset>
 
         <input type="submit" value="Aanmelden">
