@@ -1,0 +1,19 @@
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 1rem 0.5rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+article {
+    max-width: 30em;
+    line-height: 1.2rem;
+    margin: 1rem;
+}
