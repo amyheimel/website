@@ -4,21 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Verhalen voor onderweg</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="vreemdetaal.html">Vreemde taal</a></li>
-            <li><a href="dialoog.html">Dialoog</a></li>
-            <li><a href="ervaringen.html">Ervaringen</a></li>
-            <li><a href="busverhalen.html">Busverhalen</a></li>
-            <li><a href="gerijm.html">Gerijm</a></li>
-            <li><a href="alleverhalen.html">Alle verhalen</a></li>
-            <li><a href="mijnlijtje.html">Mijn lijstje</a></li>
+            <li><a href="mijnlijstje.html">Mijn lijstje</a></li>
             <li><a href="aanmelden.html">Inloggen</a></li>
         </ul>
     </nav>
+<section class="filters">
+    <form>
+        <fieldset>
+            <legend>Filteropties</legend>
+            <select class="filteropties">
+                <option value="">Selecteer categorie:</option>
+                <option value="1">Alle verhalen</option>
+                <option value="2">Vreemde taal</option>
+                <option value="3">Dialoog</option>
+                <option value="4">Ervaringen</option>
+                <option value="5">Busverhalen</option>
+                <option value="6">Gerijm</option>
+            </select>
+        </fieldset>
+    </form>
 
     <form>
         <fieldset>
@@ -33,9 +44,11 @@
             </select>
         </fieldset>
     </form>
+</section>
 
     <main>
         <h1>Verhalen voor onderweg</h1>
+        <img src="img/topfoto.png" alt="omslagfoto">
         <article>
             <h2>Boers</h2>
             <footer>
@@ -96,6 +109,7 @@
             <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort.</p><a href="busverhalen.html">Verder lezen</a>
         </article>
     </main>
+
     <footer>
         <p>&copy; Copyright 2016, Molovisch</p>
     </footer>

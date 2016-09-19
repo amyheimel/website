@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+li{
+display:inline-block;
+}
+
+h1{
+font-size: 2em;
+    color: #000;
+}
+
+h2{
+font-size:1.5em;
+    color: #55b366;
+}
+
+p{
+    max-width: 30em;
+}
+
+a{
+    color: #000;
+}
+
+.filters{
+    display: flex;
+    max-width: 30em;
+}
+
+.filters > form {
+    width: 50%;
+}
+
+img {
+    width:100%;
+}
