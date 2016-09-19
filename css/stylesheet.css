@@ -1,31 +1,235 @@
-body{
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*mijn css*/
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    line-height: 1.2em;
 }
 
-li{
-display:inline-block;
-}
-
-h1{
-font-size: 2em;
+h1 {
+    font-size: 2em;
     color: #000;
+    line-height: 1.2em
 }
 
-h2{
-font-size:1.5em;
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
     color: #55b366;
 }
 
-p{
+p {
     max-width: 30em;
 }
 
-a{
+a {
     color: #000;
 }
 
-.filters{
+footer {
+font-size: 0.6em;
+}
+
+/*Omslag*/
+.omslag {
+    background-color: #fff;
+    background-image: url("../img/topfoto2.png");
+    background-size: cover;
+}
+
+.omslag > h1 {
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/*artikel*/
+article {
+    background-color: rgba(237, 219, 202, 0.5);
+    margin: 3% 0;
+    padding: 0.7em 1em;
+}
+
+article > footer {
+    font-size: 0.8em;
+}
+
+article > a {
+    background-color: #e83a69;
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+/*navigatie*/
+nav {
+    text-align: right;
+    align-items: baseline;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+li {
+    display: inline;
+}
+
+li > img {
+    width: 1em;
+    margin: 0.5em 0.5em 0em 0.5em;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+.mijnlijstje {
+    color: #e83a69;
+}
+
+.account {
+    color: #55b366;
+}
+
+
+/*filters*/
+.filters {
     display: flex;
     max-width: 30em;
 }
@@ -34,6 +238,11 @@ a{
     width: 50%;
 }
 
-img {
-    width:100%;
+legend {
+    display: none;
 }
+
+select{
+    width: 100%;
+}
+
