@@ -92,7 +92,9 @@ video {
     vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -136,10 +138,12 @@ table {
 
 
 /*mijn css*/
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.2em;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -163,36 +167,44 @@ a {
 }
 
 footer {
-font-size: 0.6em;
+    font-size: 0.6em;
 }
 
+
 /*Omslag*/
+
 .omslag {
-    background-color: #fff;
+    background-color: red;
     background-image: url("../img/topfoto2.png");
-    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 7.5em;
 }
 
 .omslag > h1 {
     color: #fff;
     text-align: center;
-    padding: 0.5em;
+    padding: 1em 0.5em;
 }
 
+
 /*artikel*/
+
 article {
     background-color: rgba(237, 219, 202, 0.5);
     margin: 3% 0;
     padding: 0.7em 1em;
 }
 
-article > footer {
+header {
     font-size: 0.8em;
 }
 
 article > a {
     background-color: #e83a69;
     text-decoration: none;
+    display: table;
+    margin: 0.5em;
     padding: 0.3em 0.8em;
     border-radius: 5px;
     text-align: center;
@@ -200,10 +212,14 @@ article > a {
 }
 
 /*navigatie*/
+
 nav {
-    text-align: right;
-    align-items: baseline;
     padding: 0 0.5em 0.5em 0.5em;
+}
+
+nav > ul {
+    display: flex;
+    align-items: baseline;
 }
 
 li {
@@ -212,6 +228,8 @@ li {
 
 li > img {
     width: 1em;
+    position: relative;
+    top: 0.15em;
     margin: 0.5em 0.5em 0em 0.5em;
 }
 
@@ -219,30 +237,51 @@ li > a {
     text-decoration: none;
 }
 
-.mijnlijstje {
-    color: #e83a69;
+li:nth-of-type(1) {
+    flex-grow: 6;
 }
 
-.account {
+li:nth-of-type(2) a {
     color: #55b366;
+    margin-right: 0.5em;
+}
+
+li:nth-of-type(3) a {
+    color: #e83a69;
+    margin-right: 0.5em;
 }
 
 
 /*filters*/
+
 .filters {
     display: flex;
+    width: 100vw;
+    justify-content: space-around;
     max-width: 30em;
-}
-
-.filters > form {
-    width: 50%;
+    margin: auto;
+    padding: 0 1em;
 }
 
 legend {
     display: none;
 }
 
-select{
-    width: 100%;
+section {
+    display: flex;
 }
 
+.categorieen{
+    flex-basis: 50%;
+}
+
+.categorieen select {
+width: 15em;
+}
+.sorteren{
+flex-basis: 50%;
+}
+
+.sorteren select {
+width: 13em;
+}
