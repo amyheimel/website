@@ -171,6 +171,7 @@ footer {
     font-size: 0.6em;
     background-color: #55b366;
     color: #fff;
+    margin-top: 1em;
     width: auto;
     padding: 0.5em 3em;
 }
@@ -195,6 +196,7 @@ footer {
 
 
 /*artikel*/
+
 article {
     background-color: rgba(237, 219, 202, 0.5);
     margin: auto;
@@ -202,8 +204,8 @@ article {
     padding: 0.7em 1em;
 }
 
-p{
-max-width: 20em;
+p {
+    max-width: 20em;
 }
 
 header {
@@ -217,6 +219,7 @@ header > span:nth-of-type(1) {
 
 article > a {
     background-color: #e83a69;
+    font-size: 0.8em;
     text-decoration: none;
     display: table;
     margin: 0.5em;
@@ -224,6 +227,18 @@ article > a {
     border-radius: 5px;
     text-align: center;
     color: #fff;
+}
+
+.meerverhalen {
+    background-color: #55b366;
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
@@ -304,13 +319,14 @@ section {
     width: 12em;
 }
 
+/*Media queries*/
 @media only screen and (min-width: 22em) {
-    article{
-    max-width: 20em;
+    article {
+        max-width: 20em;
     }
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 45em) {
     main {
         display: flex;
         flex-wrap: wrap;
@@ -318,24 +334,24 @@ section {
     }
     article {
         align-items: flex-start;
-        margin: 0.5em;
+        margin: 0.25em;
     }
-
     .omslag {
-    height: 13em;
+        height: 13em;
     }
-
-    h1{
-    font-size: 3em;
+    h1 {
+        font-size: 3em;
     }
 }
 
-@media only screen and (min-width: 70em) {
-    .omslag{
-    height: 16em;
+@media only screen and (min-width: 67.5em) {
+    .omslag {
+        height: 16em;
     }
-
-    h1{
-    font-size: 4em;
+    h1 {
+        font-size: 4em;
+    }
+    article {
+        margin: 0.25em;
     }
 }
