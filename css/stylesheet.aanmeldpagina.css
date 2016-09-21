@@ -159,6 +159,13 @@ main > h1 {
     font-weight: bold;
 }
 
+header{
+    display: flex;
+}
+
+header > img{
+}
+
 footer {
     font-size: 0.6em;
     background-color: #55b366;
