@@ -149,6 +149,7 @@ body {
 h1 {
     font-size: 2em;
     color: #000;
+    font-weight: bold;
     line-height: 1.2em
 }
 
@@ -168,17 +169,22 @@ a {
 
 footer {
     font-size: 0.6em;
+    background-color: #55b366;
+    color: #fff;
+    width: auto;
+    padding: 0.5em 3em;
 }
 
 
 /*Omslag*/
 
 .omslag {
-    background-color: red;
-    background-image: url("../img/topfoto2.png");
+    background-color: #fff;
+    background-image: url("../img/topfoto1.png");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 7.5em;
+    height: 8em;
 }
 
 .omslag > h1 {
@@ -189,15 +195,24 @@ footer {
 
 
 /*artikel*/
-
 article {
     background-color: rgba(237, 219, 202, 0.5);
-    margin: 3% 0;
+    margin: auto;
+    margin-bottom: 0.5em;
     padding: 0.7em 1em;
+}
+
+p{
+max-width: 20em;
 }
 
 header {
     font-size: 0.8em;
+}
+
+header > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #e83a69;
 }
 
 article > a {
@@ -210,6 +225,7 @@ article > a {
     text-align: center;
     color: #fff;
 }
+
 
 /*navigatie*/
 
@@ -224,6 +240,7 @@ nav > ul {
 
 li {
     display: inline;
+    font-size: 0.8em;
 }
 
 li > img {
@@ -271,17 +288,54 @@ section {
     display: flex;
 }
 
-.categorieen{
+.categorieen {
     flex-basis: 50%;
 }
 
 .categorieen select {
-width: 15em;
+    width: 15em;
 }
-.sorteren{
-flex-basis: 50%;
+
+.sorteren {
+    flex-basis: 50%;
 }
 
 .sorteren select {
-width: 13em;
+    width: 12em;
+}
+
+@media only screen and (min-width: 22em) {
+    article{
+    max-width: 20em;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        align-items: flex-start;
+        margin: 0.5em;
+    }
+
+    .omslag {
+    height: 13em;
+    }
+
+    h1{
+    font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 70em) {
+    .omslag{
+    height: 16em;
+    }
+
+    h1{
+    font-size: 4em;
+    }
 }
