@@ -241,6 +241,11 @@ article > a {
     text-align: center;
 }
 
+span > img{
+    width: 1em;
+    margin: 0 0.3em 0 0;
+}
+
 main > section{
     width:95%;
 }
@@ -295,7 +300,7 @@ li:nth-of-type(3) a {
     justify-content: space-around;
     max-width: 30em;
     margin: auto;
-    padding: 0 1em;
+    padding: 0 1.5em;
 }
 
 legend {
@@ -311,7 +316,7 @@ section {
 }
 
 .categorieen select {
-    width: 15em;
+    width: 13em;
 }
 
 .sorteren {

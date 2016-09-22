@@ -146,7 +146,7 @@ body {
 }
 
 section > img{
-    visibility: hidden;
+    display: none;
     margin-bottom: -20em;
 }
 
@@ -275,10 +275,10 @@ h1 {
 @media only screen and (min-width: 40em) {
     /*Section > img geholpen door Maikel Sleebos*/
 section > img{
-    visibility: visible;
+    display: block;
     width: 8em;
     position: relative;
-    top: -30.5em;
+    top: -29.5em;
     left: 105%;
     margin: 0 0 -10em 0;
     }
