@@ -10,46 +10,56 @@
 </head>
 
 <body>
-
-   <header>
-       <img src="img/logo_3.png" alt="logo">
-   </header>
+   <nav>
+    <ul>
+        <li><img src="img/logo_icon.png" alt="logo">
+            <a href="index.html"></a>
+            </li>
+            <li><img src="img/account_icon.png" alt="account icon"><a href="aanmelden.html">Inloggen</a></li>
+            <li><img src="img/lijstje_icon.png" alt="mijn lijstje icon"><a href="mijnlijstje.html">Mijn lijstje</a></li>
+        </ul>
+    </nav>
 
     <main>
-    <h1>Aanmeldformulier</h1>
-    <form>
-        <fieldset>
-            <legend>Persoonlijke gegevens</legend>
-            <label for="voornaam">Voornaam*:</label>
-            <input name="Voornaam" type="text" required autofocus>
-            <label for="tussenvoegsel">Tussenvoegel:</label>
-            <input name="tussenvoegsel" type="text">
-            <label for="achternaam">Achternaamm*:</label>
-            <input name="achternaam" type="text" required>
-            <label for="postcode">Adres*:</label>
-            <input name="postcode" type="text" placeholder="1400cr" maxlength="6" size="6" required>
-            <input name="straatnaam" type="text" placeholder="straatnaam" required>
-            <input name="huisnummer" type="text" placeholder="huisnr" size="4" required>
-            <label for="telefoonnummer">Telefoonnummer:</label>
-            <input name="landnummer" type="tel" maxlength="4" size="4">
-            <input name="telefoonnummer" type="tel" maxlength="8" size="8">
-        </fieldset>
+        <section>
+            <h1>Aanmeldformulier</h1>
+            <form>
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend>
+                    <label for="voornaam">Voornaam:</label>
+                    <input name="Voornaam" type="text" required autofocus>
+                    <label for="tussenvoegsel">Tussenvoegel:</label>
+                    <input name="tussenvoegsel" type="text">
+                    <label for="achternaam">Achternaam:</label>
+                    <input name="achternaam" type="text" required>
+                    <label for="postcode">Adres:</label>
+                    <input name="postcode" type="text" placeholder="1400cr" maxlength="6" size="6" required>
+                    <input name="straatnaam" type="text" placeholder="straatnaam" required>
+                    <input name="huisnummer" type="text" placeholder="nr" size="4" required>
+                    <label for="telefoonnummer">Telefoonnummer:</label>
+                    <input name="landnummer" type="tel" maxlength="4" size="4">
+                    <input name="telefoonnummer" type="tel" maxlength="8" size="8">
+                </fieldset>
 
-        <fieldset>
-            <legend>Inloggegevens</legend>
-            <label for="e-mailadres">E-mailadres*:</label>
-            <input name="e-mailadres" type="email" placeholder="voorbeeld@voorbeeld.nl" required>
-            <label for="wachtwoord">Wachtwoord*:</label>
-            <input name="wachtwoord" type="password" required>
-        </fieldset>
+                <fieldset>
+                    <legend>Inloggegevens</legend>
+                    <label for="e-mailadres">E-mailadres:</label>
+                    <input name="e-mailadres" type="email" placeholder="voorbeeld@voorbeeld.nl" required>
+                    <label for="wachtwoord">Wachtwoord:</label>
+                    <input name="wachtwoord" type="password" required>
+                </fieldset>
 
-        <input type="submit" value="Aanmelden">
-    </form>
+                <fieldset>
+                    <legend>aanmeldknop</legend>
+                    <input class="aanmelden" type="submit" value="Aanmelden">
+                </fieldset>
 
-    <span>* Verplichte velden</span>
+            </form>
+<img src="img/logo_3.png" alt="logo">
+        </section>
     </main>
 
-<footer>
+    <footer>
         <p>&copy; Copyright 2016, Molovisch</p>
     </footer>
 </body>
