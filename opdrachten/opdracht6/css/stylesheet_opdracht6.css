@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*mijn css*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2em
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #00d66c;
+}
+
+p {
+    max-width: 30em;
+}
+
+a {
+    color: #000;
+}
+
+
+/*Omslag*/
+
+.omslag {
+    background-color: #fff;
+    background-image: url("../img/topfoto2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+    height: 8em;
+}
+
+.omslag > h1 {
+    color: #00d66c;
+    text-align: center;
+    padding: 1em 0.5em;
+}
+
+
+/*Header*/
+
+header {
+    font-size: 0.8em;
+}
+
+header > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #e83a69;
+}
+
+header > span:nth-of-type(3) {
+    font-weight: bold;
+    color: #2b3088;
+}
+
+
+/*Artikel*/
+
+article {
+    background-color: rgba(237, 219, 202, 0.5);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 0.7em 1em;
+}
+
+p {
+    max-width: 20em;
+    margin-top: 0.3em;
+}
+
+article > a {
+    background-color: #e83a69;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: table;
+    margin: 0.5em;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+main > section {
+    width: 95%;
+}
+
+
+/*navigatie*/
+
+nav {
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+nav > ul {
+    display: flex;
+    align-items: baseline;
+}
+
+li {
+    display: inline;
+    font-size: 0.8em;
+}
+
+li > img {
+    width: 1.2em;
+    position: relative;
+    top: 0.15em;
+    margin: 0.5em 0.5em 0em 0.5em;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+li:nth-of-type(1) {
+    flex-grow: 6;
+}
+
+li:nth-of-type(2) a {
+    color: #00d66c;
+    margin-right: 0.5em;
+}
+
+li:nth-of-type(3) a {
+    color: #e83a69;
+    margin-right: 0.5em;
+}
+
+
+/*filters*/
+
+.filters {
+    display: flex;
+    width: 100vw;
+    max-width: 30em;
+    margin: auto;
+}
+
+legend {
+    display: none;
+}
+
+section {
+    display: flex;
+}
+
+.categorieen {
+    margin-left: auto;
+}
+
+.categorieen select {
+    width: 13em;
+}
+
+.sorteren {
+    margin-right: auto;
+}
+
+.sorteren select {
+    width: 10em;
+}
+
+.zoeken {
+    margin-top: 0.1em;
+    transition: all .3s;
+}
+
+button {
+    background-color: #2b3088;
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.zoeken img {
+    width: 1.3em;
+}
+
+.zoekveld {
+    display: none;
+    background-color: #fff;
+    padding: 0.1em 1.5em;
+    font-size: 0.7em;
+    border-radius: 0 5px 5px 0;
+    border-style: solid;
+    border-color: red;
+}
+
+.zoekveld-active {
+    display: inline-block;
+}
+
+
+/*Media queries*/
+
+@media only screen and (min-width: 22em) {
+    article {
+        max-width: 20em;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        align-items: flex-start;
+        margin: 0.25em;
+    }
+    .omslag {
+        height: 13em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 67.5em) {
+    .omslag {
+        height: 16em;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    article {
+        margin: 0.25em;
+    }
+}
