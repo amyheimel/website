@@ -299,10 +299,8 @@ li:nth-of-type(3) a {
 .filters {
     display: flex;
     width: 100vw;
-    justify-content: space-around;
     max-width: 30em;
     margin: auto;
-    padding: 0 1.5em;
 }
 
 legend {
@@ -314,7 +312,7 @@ section {
 }
 
 .categorieen {
-    flex-basis: 50%;
+    margin-left: auto;
 }
 
 .categorieen select {
@@ -322,12 +320,44 @@ section {
 }
 
 .sorteren {
-    flex-basis: 50%;
+    margin-right: auto;
 }
 
 .sorteren select {
-    width: 12em;
+    width: 10em;
 }
+
+.zoeken {
+    margin-top: 0.1em;
+    transition: all .3s;
+}
+
+button {
+    background-color: #2b3088;
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.zoeken img {
+    width: 1.3em;
+}
+
+.zoekveld {
+    display: none;
+    background-color: #fff;
+    padding: 0.1em 1.5em;
+    font-size: 0.7em;
+    border-radius: 0 5px 5px 0;
+    border-style: solid;
+    border-color: red;
+}
+
+.zoekveld-active {
+    display: inline-block;
+}
+
+
 
 /*Media queries*/
 @media only screen and (min-width: 22em) {
