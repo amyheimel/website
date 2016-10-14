@@ -188,6 +188,7 @@ footer {
     text-align: center;
 }
 
+
 /*Omslag*/
 
 .omslag {
@@ -206,7 +207,9 @@ footer {
     padding: 1em 0.5em;
 }
 
+
 /*Header*/
+
 header {
     font-size: 0.8em;
 }
@@ -221,11 +224,11 @@ header > span:nth-of-type(3) {
     color: #2b3088;
 }
 
+
 /*Artikel*/
 
 article {
     background-color: rgba(237, 219, 202, 0.5);
-    border-radius: 10px;
     margin: auto;
     margin-bottom: 0.5em;
     padding: 0.7em 1em;
@@ -243,14 +246,14 @@ article > a {
     display: table;
     margin: 0.5em;
     padding: 0.3em 0.8em;
-    border-radius: 5px;
     text-align: center;
     color: #fff;
 }
 
-main > section{
-    width:95%;
+main > section {
+    width: 95%;
 }
+
 
 /*navigatie*/
 
@@ -301,6 +304,7 @@ li:nth-of-type(3) a {
     width: 100vw;
     max-width: 30em;
     margin: auto;
+    margin-bottom: 0.3em;
 }
 
 legend {
@@ -339,6 +343,10 @@ button {
     border-style: none;
 }
 
+.button-active {
+    border-radius: 5px 0 0 5px;
+}
+
 .zoeken img {
     width: 1.3em;
 }
@@ -346,11 +354,11 @@ button {
 .zoekveld {
     display: none;
     background-color: #fff;
-    padding: 0.1em 1.5em;
+    padding: 0 1.5em;
     font-size: 0.7em;
     border-radius: 0 5px 5px 0;
-    border-style: solid;
-    border-color: red;
+    border: solid 1px #2b3088;
+    transition: all 3sec;
 }
 
 .zoekveld-active {
@@ -358,11 +366,20 @@ button {
 }
 
 
-
 /*Media queries*/
-@media only screen and (min-width: 22em) {
+
+@media only screen and (min-width: 15em) {
     article {
-        max-width: 20em;
+        max-width: 30em;
+    }
+    p {
+        max-width: 25em;
+    }
+}
+
+@media only screen and (min-width: 32em) {
+    article {
+        border-radius: 10px;
     }
 }
 
@@ -372,9 +389,16 @@ button {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .zoekveld {
+        display: inline-block;
+    }
+    button {
+        border-radius: 5px 0 0 5px;
+    }
     article {
         align-items: flex-start;
         margin: 0.25em;
+        max-width: 20em;
     }
     .omslag {
         height: 13em;

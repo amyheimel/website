@@ -5,7 +5,7 @@ var button = document.querySelector('button');
 
 var active = function () {
   /* 3. toggle een class op een element, dit triggert een CSS Transition (zie CSS: .zoekveld-active) */
-    zoekveld.classList.toggle('-active')
+    zoekveld.classList.toggle('zoekveld-active')
 }
 
 /* 2. voeg een event toe aan een element */
