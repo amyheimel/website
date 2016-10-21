@@ -137,7 +137,7 @@ table {
 }
 
 
-/*mijn css*/
+/*Basis*/
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -176,18 +176,6 @@ footer {
     padding: 0.5em 3em;
 }
 
-.meerverhalen {
-    background-color: #00d66c;
-    color: #fff;
-    font-size: 0.8em;
-    text-decoration: none;
-    display: block;
-    margin: auto;
-    padding: 0.3em 0.8em;
-    border-radius: 5px;
-    text-align: center;
-}
-
 
 /*Omslag*/
 
@@ -206,54 +194,6 @@ footer {
     text-align: center;
     padding: 1em 0.5em;
 }
-
-
-/*Header*/
-
-header {
-    font-size: 0.8em;
-}
-
-header > span:nth-of-type(1) {
-    font-weight: bold;
-    color: #e83a69;
-}
-
-header > span:nth-of-type(3) {
-    font-weight: bold;
-    color: #2b3088;
-}
-
-
-/*Artikel*/
-
-article {
-    background-color: rgba(237, 219, 202, 0.5);
-    margin: auto;
-    margin-bottom: 0.5em;
-    padding: 0.7em 1em;
-}
-
-p {
-    max-width: 20em;
-    margin-top: 0.3em;
-}
-
-article > a {
-    background-color: #e83a69;
-    font-size: 0.8em;
-    text-decoration: none;
-    display: table;
-    margin: 0.5em;
-    padding: 0.3em 0.8em;
-    text-align: center;
-    color: #fff;
-}
-
-main > section {
-    width: 95%;
-}
-
 
 /*navigatie*/
 
@@ -336,7 +276,7 @@ section {
     transition: all .3s;
 }
 
-button {
+section > button {
     background-color: #2b3088;
     padding: 0.1em 0.3em;
     border-radius: 5px;
@@ -344,7 +284,7 @@ button {
 }
 
 .button-active {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
 }
 
 .zoeken img {
@@ -356,7 +296,7 @@ button {
     background-color: #fff;
     padding: 0 1.5em;
     font-size: 0.7em;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
     border: solid 1px #2b3088;
     transition: all 3sec;
 }
@@ -365,6 +305,80 @@ button {
     display: inline-block;
 }
 
+/*Artikel*/
+
+article {
+    background-color: rgba(237, 219, 202, 0.5);
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 0.7em 1em;
+    position: relative;
+}
+
+p {
+    max-width: 20em;
+    margin-top: 0.3em;
+}
+
+article > a {
+    background-color: #e83a69;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: table;
+    margin: 0.5em;
+    padding: 0.3em 0.8em;
+    text-align: center;
+    color: #fff;
+}
+
+main > section {
+    width: 95%;
+}
+
+/*Meer artikelen weergeven*/
+.meerverhalen-knop {
+    background-color: #00d66c;
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.artikelen-inactief{
+display: none;
+}
+
+.artikelen-actief{
+display: inline-block;
+}
+
+
+/*Header*/
+
+header {
+    font-size: 0.8em;
+}
+
+header > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #e83a69;
+}
+
+header > span:nth-of-type(3) {
+    font-weight: bold;
+    color: #2b3088;
+}
+
+header > img{
+    width: 25px;
+    position: absolute;
+    right: 1.2em;
+    top: 1em;
+}
 
 /*Media queries*/
 
