@@ -176,6 +176,7 @@ footer {
     padding: 0.5em 3em;
 }
 
+<<<<<<< HEAD:css/stylesheet.css
 .meerverhalen {
     background-color: #00d66c;
     color: #fff;
@@ -186,6 +187,25 @@ footer {
     padding: 0.3em 0.8em;
     border-radius: 5px;
     text-align: center;
+=======
+
+/*Omslag*/
+
+.omslag {
+    background-color: #fff;
+    background-image: url("../img/topfoto2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+    height: 8em;
+}
+
+.omslag > h1 {
+    color: #00d66c;
+    text-align: center;
+    padding: 1em 0.5em;
+>>>>>>> origin/master:css/stylesheet1.css
 }
 
 /*navigatie*/
@@ -286,7 +306,7 @@ section {
     transition: all .3s;
 }
 
-button {
+section > button {
     background-color: #2b3088;
     padding: 0.1em 0.3em;
     border-radius: 5px;
@@ -345,6 +365,31 @@ main > section {
     width: 95%;
 }
 
+<<<<<<< HEAD:css/stylesheet.css
+=======
+/*Meer artikelen weergeven*/
+.meerverhalen-knop {
+    background-color: #00d66c;
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.artikelen-inactief{
+display: none;
+}
+
+.artikelen-actief{
+display: inline-block;
+}
+
+
+>>>>>>> origin/master:css/stylesheet1.css
 /*Header*/
 
 header {
