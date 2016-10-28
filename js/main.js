@@ -10,3 +10,16 @@ var active = function () {
 }
 
 button.addEventListener('click', active);
+
+
+
+/* 2. Artikel toevoegen aan lijstje*/
+var toevoegknop = document.querySelector('.toevoegen-lijstje-inactief');
+var popup = document.querySelector('.toegevoegd-popup');
+
+var toegevoegd = function () {
+    toevoegknop.classList.toggle('toevoegen-lijstje-actief')
+    popup.classList.toggle('toegevoegd-popup-actief')
+}
+
+toevoegknop.addEventListener('click', toegevoegd);

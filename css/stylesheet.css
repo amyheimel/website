@@ -137,12 +137,12 @@ table {
 }
 
 
-/*mijn css*/
+/*Basis*/
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     box-sizing: border-box;
 }
 
@@ -150,7 +150,7 @@ h1 {
     font-size: 2em;
     color: #000;
     font-weight: bold;
-    line-height: 1.2em
+    line-height: 1.5em
 }
 
 h2 {
@@ -189,72 +189,6 @@ footer {
 }
 
 
-/*Omslag*/
-
-.omslag {
-    background-color: #fff;
-    background-image: url("../img/topfoto2.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0.2em;
-    height: 8em;
-}
-
-.omslag > h1 {
-    color: #00d66c;
-    text-align: center;
-    padding: 1em 0.5em;
-}
-
-
-/*Header*/
-
-header {
-    font-size: 0.8em;
-}
-
-header > span:nth-of-type(1) {
-    font-weight: bold;
-    color: #e83a69;
-}
-
-header > span:nth-of-type(3) {
-    font-weight: bold;
-    color: #2b3088;
-}
-
-
-/*Artikel*/
-
-article {
-    background-color: rgba(237, 219, 202, 0.5);
-    margin: auto;
-    margin-bottom: 0.5em;
-    padding: 0.7em 1em;
-}
-
-p {
-    max-width: 20em;
-    margin-top: 0.3em;
-}
-
-article > a {
-    background-color: #e83a69;
-    font-size: 0.8em;
-    text-decoration: none;
-    display: table;
-    margin: 0.5em;
-    padding: 0.3em 0.8em;
-    text-align: center;
-    color: #fff;
-}
-
-main > section {
-    width: 95%;
-}
-
-
 /*navigatie*/
 
 nav {
@@ -271,12 +205,11 @@ li {
     font-size: 0.8em;
 }
 
-li > img {
-    width: 1.2em;
+a > img{
+     width: 1.2em;
     position: relative;
     top: 0.15em;
-    margin: 0.5em 0.5em 0em 0.5em;
-}
+    margin: 0.5em 0.5em 0em 0.5em;}
 
 li > a {
     text-decoration: none;
@@ -291,9 +224,37 @@ li:nth-of-type(2) a {
     margin-right: 0.5em;
 }
 
+li:nth-of-type(2) a:hover {
+    color: #079149;
+    margin-right: 0.5em;
+}
+
 li:nth-of-type(3) a {
     color: #e83a69;
     margin-right: 0.5em;
+}
+
+li:nth-of-type(3) a:hover {
+    color: #A52B51;
+    margin-right: 0.5em;
+}
+
+/*Omslag*/
+
+.omslag {
+    background-color: #fff;
+    background-image: url("../img/topfoto2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+    height: 8em;
+}
+
+.omslag > h1 {
+    color: #00d66c;
+    text-align: center;
+    padding: 1em 0.5em;
 }
 
 
@@ -316,23 +277,31 @@ section {
 }
 
 .categorieen {
-    margin-left: auto;
+    margin-left: auto;;
+    margin-top: 0.1em;
+    margin-right: 0.4em;
 }
 
 .categorieen select {
     width: 13em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
 }
 
 .sorteren {
     margin-right: auto;
+    margin-top: 0.1em;
 }
 
 .sorteren select {
     width: 10em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
 }
 
 .zoeken {
     margin-top: 0.1em;
+    margin-left: 0.4em;
     transition: all .3s;
 }
 
@@ -344,7 +313,7 @@ button {
 }
 
 .button-active {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
 }
 
 .zoeken img {
@@ -356,13 +325,115 @@ button {
     background-color: #fff;
     padding: 0 1.5em;
     font-size: 0.7em;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
     border: solid 1px #2b3088;
-    transition: all 3sec;
+    transition: 2s;
 }
 
 .zoekveld-active {
     display: inline-block;
+}
+
+
+/*Artikel*/
+
+article {
+    background-color: rgba(237, 219, 202, 0.5);
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 0.7em 1em;
+    position: relative;
+}
+
+p {
+    max-width: 20em;
+    margin-top: 0.3em;
+}
+
+article > a {
+    background-color: #e83a69;
+    font-size: 0.8em;
+    text-decoration: none;
+    border-radius: 10px;
+    display: table;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.3em 0.8em;
+    text-align: center;
+    color: #fff;
+}
+
+article > a:hover{
+    background-color: #A52B51;
+}
+
+main > section {
+    width: 95%;
+}
+
+
+/*Header*/
+
+header {
+    font-size: 0.8em;
+}
+
+header > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #e83a69;
+}
+
+header > span:nth-of-type(3) {
+    font-weight: bold;
+    color: #2b3088;
+}
+
+.toevoegen-lijstje-inactief {
+    background-image: url(../img/add_inactief.png);
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 1.2em;
+    top: 1em;
+    background-color: rgba(237, 219, 202, 0.5);
+    border-radius: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+.toevoegen-lijstje-actief {
+    background-image: url(../img/add_actief.png);
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 1.2em;
+    top: 1em;
+    background-color: rgba(237, 219, 202, 0.5);
+    border-radius: 0;
+    padding: 0;
+}
+
+
+/*@keyframe popup{
+    from {display: inline-block;}
+    to {display: none;}
+}*/
+
+.toegevoegd-popup {
+    display: none;
+    transition: 1s;
+}
+
+.toegevoegd-popup-actief {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    top: 3em;
+    right: -0.3em;
+    /*animation-name: popup;
+    animation-duration: 2s;
+    animation-delay: 2s;*/
 }
 
 
@@ -408,6 +479,12 @@ button {
     }
 }
 
+@media only screen and (min-width: 55em) {
+    article {
+        max-width: 30em;
+    }
+}
+
 @media only screen and (min-width: 67.5em) {
     .omslag {
         height: 16em;
@@ -417,5 +494,6 @@ button {
     }
     article {
         margin: 0.25em;
+        max-width: 20em;
     }
 }
