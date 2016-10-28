@@ -176,6 +176,7 @@ footer {
     padding: 0.5em 3em;
 }
 
+<<<<<<< HEAD:css/stylesheet.css
 .meerverhalen {
     background-color: #00d66c;
     color: #fff;
@@ -186,9 +187,30 @@ footer {
     padding: 0.3em 0.8em;
     border-radius: 5px;
     text-align: center;
+=======
+
+<<<<<<< HEAD:css/stylesheet.css
+=======
+/*Omslag*/
+
+.omslag {
+    background-color: #fff;
+    background-image: url("../img/topfoto2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.2em;
+    height: 8em;
 }
 
+.omslag > h1 {
+    color: #00d66c;
+    text-align: center;
+    padding: 1em 0.5em;
+>>>>>>> origin/master:css/stylesheet1.css
+}
 
+>>>>>>> origin/master:css/stylesheet1.css
 /*navigatie*/
 
 nav {
@@ -234,11 +256,14 @@ li:nth-of-type(3) a {
     margin-right: 0.5em;
 }
 
+<<<<<<< HEAD:css/stylesheet.css
 li:nth-of-type(3) a:hover {
     color: #A52B51;
     margin-right: 0.5em;
 }
 
+=======
+>>>>>>> origin/master:css/stylesheet1.css
 /*Omslag*/
 
 .omslag {
@@ -256,7 +281,10 @@ li:nth-of-type(3) a:hover {
     text-align: center;
     padding: 1em 0.5em;
 }
+<<<<<<< HEAD:css/stylesheet.css
 
+=======
+>>>>>>> origin/master:css/stylesheet1.css
 
 /*filters*/
 
@@ -305,7 +333,7 @@ section {
     transition: all .3s;
 }
 
-button {
+section > button {
     background-color: #2b3088;
     padding: 0.1em 0.3em;
     border-radius: 5px;
@@ -334,6 +362,83 @@ button {
     display: inline-block;
 }
 
+/*Artikel*/
+
+article {
+    background-color: rgba(237, 219, 202, 0.5);
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 0.7em 1em;
+    position: relative;
+}
+
+p {
+    max-width: 20em;
+    margin-top: 0.3em;
+}
+
+article > a {
+    background-color: #e83a69;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: table;
+    margin: 0.5em;
+    padding: 0.3em 0.8em;
+    text-align: center;
+    color: #fff;
+}
+
+main > section {
+    width: 95%;
+}
+
+<<<<<<< HEAD:css/stylesheet.css
+=======
+/*Meer artikelen weergeven*/
+.meerverhalen-knop {
+    background-color: #00d66c;
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.artikelen-inactief{
+display: none;
+}
+
+.artikelen-actief{
+display: inline-block;
+}
+
+
+>>>>>>> origin/master:css/stylesheet1.css
+/*Header*/
+
+header {
+    font-size: 0.8em;
+}
+
+header > span:nth-of-type(1) {
+    font-weight: bold;
+    color: #e83a69;
+}
+
+header > span:nth-of-type(3) {
+    font-weight: bold;
+    color: #2b3088;
+}
+
+header > img{
+    width: 25px;
+    position: absolute;
+    right: 1.2em;
+    top: 1em;
+}
 
 /*Artikel*/
 
@@ -480,9 +585,16 @@ header > span:nth-of-type(3) {
 }
 
 @media only screen and (min-width: 55em) {
+<<<<<<< HEAD:css/stylesheet.css
     article {
         max-width: 30em;
     }
+=======
+    article{
+    max-width: 30em;
+    }
+
+>>>>>>> origin/master:css/stylesheet1.css
 }
 
 @media only screen and (min-width: 67.5em) {
